@@ -1,6 +1,8 @@
 import requests
+import os
 
-SONAR_TOKEN = "fb418b9c3e0d458d47f9d9aa07888f1246ea98bb"
+SONAR_TOKEN = os.getenv("SONAR_TOKEN")
+
 SONAR_ORG = "mohan-kaligi"
 
 BASE_URL = "https://sonarcloud.io/api"
